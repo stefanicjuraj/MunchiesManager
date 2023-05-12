@@ -1,0 +1,137 @@
+* {
+  -fx-primary-color: #95bb55;
+  -fx-secondary-color: #ebebeb;
+  -fx-focus-color: #333;
+}
+.date-picker {
+  -fx-padding: 10;
+}
+.date-picker .text-field {
+  -fx-background-color: #eee;
+  -fx-background-radius: 30;
+}
+.date-picker .arrow-button {
+  -fx-background-radius: 30;
+}
+.date-picker .arrow-button:hover {
+  -fx-background-color: #eee;
+}
+.date-picker .cell:hover {
+  -fx-text-fill: black;
+}
+.date-picker .cell {
+  -fx-background-color: white;
+  -fx-padding: 10;
+}
+.date-picker .arrow-button {
+  -fx-background-color: #eee;
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+}
+.date-picker .arrow-button:hover {
+  -fx-background-color: #eee;
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+}
+.date-picker .cell:hover {
+  -fx-background-color: #eee;
+  -fx-text-fill: black;
+}
+.date-picker .selected,
+.date-picker .selected:focused {
+  -fx-background-color: #eee;
+  -fx-text-fill: #000;
+}
+.date-picker-popup .month-year-pane {
+  -fx-background-color: #eee;
+}
+.date-picker-popup .month-year-pane .label {
+  -fx-text-fill: #000;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+  -fx-background-color: #333;
+}
+.date-picker-popup .spinner .button:hover,
+.date-picker-popup .spinner .button:focused {
+  -fx-background-color: #eee;
+}
+
+.table-view {
+  -fx-background-radius: 30;
+  -fx-background-color: #eee;
+}
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+  -fx-background-color: #fff;
+  -fx-background-radius: 30;
+  -fx-padding: 10;
+}
+.table-column {
+  -fx-border-color: transparent;
+}
+.table-view .column-header {
+  -fx-background-color: #fff;
+  -fx-background-radius: 30;
+}
+.table-row-cell:filled {
+  -fx-background-color: #eee;
+  -fx-background-radius: 30;
+}
+.table-row-cell:empty {
+  -fx-background-color: transparent;
+}
+.table-row-cell:filled:selected {
+  -fx-background-color: #333;
+  -fx-background-radius: 30;
+}
+.table-view .cell:filled {
+  -fx-cell-size: 30;
+  -fx-alignment: center;
+}
+
+.combo-box-base {
+  -fx-background-color: #eee;
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+  -fx-border-color: #333;
+}
+.combo-box-base .arrow-button .arrow {
+  -fx-background-color: #333;
+}
+.combo-box .combo-box-popup .list-view .list-cell {
+  -fx-background-color: #eee;
+  -fx-text-fill: black;
+}
+.combo-box .combo-box-popup .list-view {
+  -fx-border-radius: 50;
+}
+.combo-box .combo-box-popup .list-view .list-cell:hover,
+.combo-box .combo-box-popup .list-view .list-cell:selected {
+  -fx-background-color: -fx-primary-color;
+  -fx-text-fill: #fff;
+}
+
+#calorieGoalText,
+#weightText {
+  -fx-accent: #333;
+  -fx-background-color: #eee;
+  -fx-text-fill: #000;
+  -fx-background-insets: 0, 1 0 0 0;
+  -fx-background-radius: 30;
+}
+#calorieGoalText:focused,
+#weightText:focused {
+  -fx-background-color: #eee;
+}
+
+.progress-indicator {
+  -fx-accent: #333;
+}
+
+.progress-indicator .label {
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-text-fill: red;
+}

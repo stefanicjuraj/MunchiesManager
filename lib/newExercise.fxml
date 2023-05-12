@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="40.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blac;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <FlowPane alignment="CENTER_LEFT" hgap="10.0" GridPane.halignment="LEFT">
+                     <children>
+                        <Button fx:id="backToHomeButtonFromExercise" mnemonicParsing="false" style="-fx-background-radius: 20; -fx-background-color: #eee;" text="← Home" textFill="#000">
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="16.0" />
+                           </font></Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <GridPane alignment="CENTER" maxWidth="-Infinity" prefWidth="330.0" vgap="50.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Burnt Cal/ h:" textFill="#000" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="exerciseNameTextField" maxWidth="-Infinity" prefWidth="220.0" promptText="e.g. Jogging" style="-fx-background-radius: 20;" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextField>
+                  <Label text="Exercise name:" textFill="#000" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="burntCaloriesTextField" maxWidth="-Infinity" prefWidth="220.0" promptText="e.g. 5.0" style="-fx-background-radius: 20;" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextField>
+                  <Button fx:id="submitNewExerciseButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-radius: 20; -fx-background-color: #eee;" text="Submit exercise" textFill="#000" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Label text="Add a new exercise" textFill="#000" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
